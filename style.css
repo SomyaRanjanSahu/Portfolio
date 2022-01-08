@@ -1,0 +1,726 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--bg-color);
+    background-image: var(--bg-img);
+    transition: .5s;
+    box-sizing: border-box;
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  :root {
+    --primary-color: #2f323a;
+    --font-color: #19B3D3;
+    --font-color-main: #22879b;
+    --hover-color: #E91E63;
+    --head-footer-color: #19B3D3;
+    --bg-color: #ececec;
+    --bg-img: url(./images/textured-paper.png);
+    --txt-color: #212529;
+  }
+  
+  [data-theme="pink"] {
+    --primary-color: #E91E63;
+    --font-color: #ececec;
+    --font-color-main: #E91E63;
+    --hover-color: #22879b;
+    --head-footer-color: #ececec;
+    --bg-color: #2f323a;
+    --bg-img: url(./images/blackpaper.png);
+    --txt-color: #ececec;
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Slider Button
+  
+  ================================================================================================================ */
+  
+  
+  .theme-switch {
+    display: inline-block;
+    height: 34px;
+    position: absolute;
+    right: 30px;
+    top: 16px;
+    width: 60px;
+    z-index: 1;
+  }
+  
+  .theme-switch input {
+    display:none;
+  }
+  
+  .slider {
+    background-color: #E91E63;
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .4s;
+    z-index: 1;
+  }
+  
+  .slider:before {
+    background-color: var(--bg-color);
+    bottom: 4px;
+    content: "";
+    height: 26px;
+    left: 4px;
+    position: absolute;
+    transition: .4s;
+    width: 26px;
+    z-index: 1;
+  }
+  
+  input:checked + .slider {
+    background-color: #22879b;
+    z-index: 1;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+    z-index: 1;
+  }
+  
+  .slider.round {
+    border-radius: 34px;
+    z-index: 1;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+    z-index: 1;
+  }
+  
+  /* =============================================================================================================
+  
+                                            Header Area
+  
+  ================================================================================================================ */
+  
+  
+  header{
+    z-index: 1;
+    /* position: fixed; */
+    background: var(--primary-color);
+    width: calc(100% - 0%);
+    top: 0;
+    height: 70px;
+    text-align: center;
+    transition: .5s;
+  }
+  
+  .centre_area h3{
+    padding-left: 20px;
+    color: #fff;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  
+  .centre_area span{
+    color: var(--head-footer-color);
+  }
+  
+  .centre_area span:hover{
+    color: var(--hover-color);
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Side Navbar
+  
+  ================================================================================================================ */
+  
+  
+  .sidebar{
+    z-index: 1;
+    top: 0;
+    background: var(--primary-color);
+    padding-top: 30px;
+    position: fixed;
+    left: 0;
+    width: 250px;
+    height: calc(100% - 0%);
+    transition: 0.3s;
+    transition-property: left;
+    overflow-y: auto;
+    box-shadow: 0 3px 0 0 rgba(0,0,0,0.12), 0 3px 0 0 rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    transition: .5s;
+  }
+  
+  .sidebar:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .sidebar-items a{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px -1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .sidebar-items a:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .profile-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sidebar .profile-info .profile-image{
+    width: 10rem;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px -1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .sidebar .profile-info .profile-image:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .sidebar a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-decoration: none;
+    padding-left: 40px;
+    box-sizing: border-box;
+    transition: 0.3s;
+    transition-property: background;
+  }
+  
+  .sidebar a:hover{
+    background: var(--hover-color);
+  }
+  
+  .sidebar i{
+    padding-right: 10px;
+  }
+  
+  label #sidebar_btn{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar{
+    left: -185px;
+  }
+  
+  #check:checked ~ .sidebar a span{
+    display: none;
+  }
+  
+  #check:checked ~ .sidebar a{
+    font-size: 20px;
+    margin-left: 165px;
+    width: 100%;
+  }
+  
+  /* =============================================================================================================
+  
+                                            Content
+  
+  ================================================================================================================ */
+  
+  
+  .content{
+    width: calc(100% - 250px);
+    margin-top: 60px;
+    padding: 20px;
+    margin-left: 250px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s;
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Home Section
+  
+  ================================================================================================================ */
+  
+  
+  #home .home-page{
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 1;
+    height: 100vh;
+    padding-top: 80px;
+    border-bottom: 5px solid #BFBFBF;
+    border-radius: 0px 0px 31px 31px;
+  }
+  
+  #home p{
+    color: var(--txt-color);
+  }
+  
+  #home .jsd{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  #home span{
+    color: var(--font-color-main);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px -1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  #home span:hover{
+    color: var(--hover-color);
+    transition: 0.3s;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  /* =============================================================================================================
+  
+                                            About Me Section
+  
+  ================================================================================================================ */
+  
+  
+  #about .about-me{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    height: 100vh;
+    padding-top: 230px;
+    border-bottom: 5px solid #BFBFBF;
+    border-radius: 0px 0px 31px 31px;
+  }
+  
+  #about h2{
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: var(--txt-color);
+  }
+  
+  #about p{
+    color: var(--txt-color);
+  }
+  
+  #about .name-bio{
+    color: var(--font-color-main);
+    text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px -1px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  #about .name-bio:hover{
+    color: var(--hover-color);
+    transition: 0.3s;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  #about .bio-info{
+    width: 40rem;
+  }
+  
+  /* =============================================================================================================
+  
+                                            Projects Section
+  
+  ================================================================================================================ */
+  
+  
+  .card{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .card:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+  }
+  
+  .card-body{
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+  }
+  
+  #projectos .projects{
+    padding-top: 124px;
+    padding-bottom: 124px;
+    border-bottom: 5px solid #BFBFBF;
+    border-radius: 0px 0px 31px 31px;
+  }
+  
+  #projectos h2{
+    margin-bottom: 3rem;
+    color: var(--txt-color);
+  }
+  
+  #projectos .deck1{
+    margin-bottom: 3rem;
+  }
+  
+  #projectos .btn{
+    background-color: var(--font-color-main);
+    border-color: var(--font-color-main);
+  }
+  
+  #projectos .btn:hover{
+    background-color: var(--hover-color);
+    border-color: var(--hover-color);
+    transition: 0.3s;
+  }
+  
+  #projectos .project-buttons{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .project-buttons a{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  }
+  
+  .project-buttons a:hover{
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Contact Me Section
+  
+  ================================================================================================================ */
+  
+  
+  #contact h2{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--txt-color);
+  }
+  
+  #contact p{
+    color: var(--txt-color);
+  }
+  
+  #contact .contact-me{
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.5;
+    height: 100vh;
+    padding-top: 330px;
+  }
+  
+  #contact .contact-info{
+    width: 35rem;
+  }
+  
+  .email-button{
+    color: var(--font-color-main);
+  }
+  
+  .email-button:hover{
+    text-decoration: none;
+    color: var(--hover-color);
+    transition: 0.3s;
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    transition: text-shadow 0.3s;
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Footer Section
+  
+  ================================================================================================================ */
+  
+  
+  #footer{
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1%;
+  }
+  
+  .copy{
+    color: #dddddd;
+    margin-bottom: 0;
+    margin-top: 5px;
+  }
+  
+  .footer-img{
+    font-size: 1.5rem;
+    color: var(--head-footer-color);
+    margin: 0.5rem 3rem 1rem;
+  }
+  
+  .footer-img:hover{
+    color: var(--hover-color);
+    transition: 0.3s;
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Check Hidden Section
+  
+  ================================================================================================================ */
+  
+  
+  
+  #check:checked ~ .content{
+    margin-left: 60px;
+    padding-left: 180px;
+  }
+  
+  #check:checked ~ .sidebar .profile-info{
+    display: none;
+  }
+  
+  #check{
+    display: none;
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Mobile Nav
+  
+  ================================================================================================================ */
+  
+  
+  .mobile-nav{
+    display: none;
+  }
+  
+  .mobile-checkbox{
+    display: none;
+  }
+  
+  
+  /* =============================================================================================================
+  
+                                            Media Query Responsive CSS
+  
+  ================================================================================================================ */
+  
+  /* ===== Media Query Responsive CSS ===== */
+  
+  @media screen and (max-width: 780px){
+    
+    /* =============================================================================================================
+  
+                                            Side Navbar Mobile
+  
+  ================================================================================================================ */
+    
+  
+    .sidebar{
+      display: none;
+    }
+  
+    #sidebar_btn{
+      display: none;
+    }
+  
+    .content{
+      margin-left: 0;
+      margin-top: 0;
+      padding: 10px 20px;
+      transition: 0s;
+      width: auto;
+    }
+  
+      /* =============================================================================================================
+  
+                                            Home Section Mobile
+  
+  ================================================================================================================ */
+  
+  
+    #home .home-page{
+      margin-top: 0px;
+      padding-top: 180px;
+      height: 100vh;
+    }
+  
+    #check:checked ~ .content{
+      margin-left: 0;
+    }
+  
+  /* =============================================================================================================
+  
+                                            About Me Section Mobile
+  
+  ================================================================================================================ */
+  
+  
+    #about .bio-info{
+      width: 20rem;
+    }
+  
+    #about .about-me{
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.5;
+      margin-top: 0px;
+      padding-top: 180px;
+      height: 100vh;
+    }
+  
+  
+   /* =============================================================================================================
+  
+                                            Projectos Section Mobile
+  
+  ================================================================================================================ */ 
+    .card-img-top {
+    width: 100%;
+    height: 50vw;
+    object-fit: cover;
+    }
+  
+    #projectos .card{
+      margin: 3rem 0;
+    }
+  
+    #projectos .projects{
+      padding-top: 90px;
+    }
+  
+  /* =============================================================================================================
+  
+                                            Contact Me Section Mobile
+  
+  ================================================================================================================ */ 
+  
+  
+    #contact .contact-info{
+      width: 18rem;
+    }
+  
+    #contact .contact-me{
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.5;
+      height: 100vh;
+      padding-top: 250px;
+    }
+  
+  /* =============================================================================================================
+  
+                                            Navbar Top Section Mobile
+  
+  ================================================================================================================ */ 
+  
+  
+    .mobile-nav{
+      display: block;
+      width: calc(100% - 0%);
+    }
+  
+    .nav-bar{
+      background: var(--primary-color);
+      width: calc(100% - 0px);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      z-index: 2;
+      position: fixed;
+      bottom: 0;
+    }
+  
+    .nav-bar .fas{
+      color: #ececec;
+    }
+  
+    .nav-bar .fas:hover{
+      color: var(--hover-color);
+      transition: 0.3s;
+    }
+  
+    .nav-bar .mobile-profile-image{
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+  
+    .nav-bar .nav_btn{
+      color: #fff;
+      font-size: 22px;
+      cursor: pointer;
+      transition: 0.3s;
+      transition-property: color;
+    }
+  
+    .nav-bar .nav_btn:hover{
+      color: var(--font-color);
+    }
+  
+    .mobile-nav_items{
+      background: var(--primary-color);
+      display: none;
+    }
+  
+    .mobile_nav_items a{
+      color: #fff;
+      display: block;
+      text-align: center;
+      letter-spacing: 1px;
+      line-height: 60px;
+      text-decoration: none;
+      box-sizing: border-box;
+      transition: 0.3s;
+      transition-property: background;
+    }
+  
+    .mobile_nav_items a:hover{
+      background: var(--font-color);
+    }
+  
+    .mobile_nav_items i{
+      padding-right: 10px;
+    }
+  
+    .active{
+      display: block;
+      position: fixed;
+      top: 70px;
+      width: 100%;
+      z-index: 2;
+    }
+  
+    header{
+      display: none;
+    }
+  
+    #footer{
+      background-color: var(--primary-color);
+      text-align: center;
+      padding: 5px;
+      position: relative;
+      bottom: 70px;
+    }
+  
+    .footer-img{
+      color: var(--font-color);
+      margin: 5px 30px;
+      font-size: 20px;
+    }
+  
+  }

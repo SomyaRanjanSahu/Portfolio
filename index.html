@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somya Sahu</title>
+
+    <!-- Bootstrap Link -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+
+    <!-- Fontawesome Library -->
+    <script src="https://kit.fontawesome.com/75099a6928.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+
+
+<body>
+
+    <input type="checkbox" id="check">
+
+    <!--Header Area Start-->
+    <header id="head">
+
+        <label for="check">
+            <i class="fas fa-bars" id="sidebar_btn"></i>
+        </label>
+        <div class="centre_area">
+            <h3>SOMYA <span>SAHU</span></h3>
+
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round"></div>
+            </label>
+        </div>
+
+    </header>
+    <!--Header Area End-->
+
+    <!--Mobile Navbar Start-->
+    <nav class="mobile-nav">
+
+        <nav class="nav-bar">
+            <input type="checkbox" id="checkbox" class="mobile-checkbox">
+            <label for="checkbox"><img src="./images/me.png" class="mobile-profile-image" alt=""></label>
+            <a href="#home"><i class="fas fa-home"></i></a>
+            <a href="#about"><i class="fas fa-address-card"></i></a>
+            <a href="#projectos"><i class="fas fa-project-diagram"></i></a>
+            <a href="#footer"><i class="fas fa-paper-plane"></i></a>
+        </nav>
+
+    </nav>
+    <!--Mobile Navbar End-->
+
+    <!--Sidebar Start-->
+    <nav class="sidebar">
+
+        <div class="profile-info">
+            <img src="images/me.png" class="profile-image" alt="">
+        </div>
+        <div class="sidebar-items">
+            <a href="#head"><i class="fas fa-home"></i><span>HOME</span></a>
+            <a href="#about"><i class="fas fa-address-card"></i><span>ABOUT ME</span></a>
+            <a href="#projectos"><i class="fas fa-project-diagram"></i><span>PROJECTS</span></a>
+            <a href="#footer"><i class="fas fa-paper-plane"></i><span>CONTACT</span></a>
+        </div>
+
+    </nav>
+    <!--Sidebar End-->
+
+    <!-- Content Start -->
+    <div class="content">
+
+        <!-- Home Section Start -->
+        <section id="home">
+
+            <article class="container-fluid home-page">
+                <p>NAMASTE!</p>
+                <p>I'M <span>SOMYA RANJAN SAHU</span></p>
+                <p class="jsd">COMPUTER SCIENCE UNDERGRAD</p>
+            </article>
+
+        </section>
+        <!-- Home Section End -->
+
+        <!-- About Section Start -->
+        <section id="about">
+
+            <div class="container-fluid about-me">
+                <article class="bio">
+                    <h2><u>Who is this guy?</u></h2>
+                    <p class="bio-info"><i>Namaste!</i> My name is <span class="name-bio">Somya Ranjan Sahu</span>, born
+                        in
+                        India
+                        with a passion for creating and bringing amazing softwares to life. I'm currently in my 2nd year
+                        of
+                        my Bachelor's degree and working on <b>Android Development</b>📱.</p>
+                    <p>I like tea and biscuits :)</p>
+                </article>
+            </div>
+
+        </section>
+        <!-- About Section End -->
+
+        <!-- Projects Section Start -->
+        <section id="projectos">
+
+            <div class="container-fluid projects">
+
+                <h2><u>PROJECTS</u></h2>
+
+                <div class="card-deck deck1">
+
+                    <article class="card">
+                        <img src="./images/catalog.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Catalog App</h3>
+                            <p class="card-text">A demo version of an E-commerce application where one
+                                can buy and store items in the cart. This app is made with FLUTTER and DART.
+                            </p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary buton1">Play Store</a>
+                                <a href="https://github.com/SomyaRanjanSahu/CatalogApp" class="btn btn-primary buton2"
+                                    target="_blank">Git Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="images/bmi.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">BMI Calculator</h3>
+                            <p class="card-text">BMI Calculator application helps in calculating the Body-Mass Index of
+                                a person. This app is built with FLUTTER and DART.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary buton1">Play Store</a>
+                                <a href="https://github.com/SomyaRanjanSahu/BMICalculatorApp" target="_blank"
+                                    class="btn btn-primary buton2">Git Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="./images/flood.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Flood Management Software</h3>
+                            <p class="card-text">Built to help people during flood. The software uses Tkinter and
+                                Sqlite3.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary buton1">Go Link</a>
+                                <a href="https://github.com/SomyaRanjanSahu/Flood-Relief-Management-Software"
+                                    target="_blank" class="btn btn-primary buton2">Git Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <div class="card-deck deck2">
+
+                    <article class="card">
+                        <img src="./images/blog.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">TechBLOG</h3>
+                            <p class="card-text">A blog website whose general purpose is to show blogs related to
+                                technology. This website uses HTML, CSS, and JavaScript.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary buton1">Website</a>
+                                <a href="#" class="btn btn-primary buton2">Git Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="./images/luvdog.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">luvDog</h3>
+                            <p class="card-text">A dating app for your doggo! A simple landing page for a fictional app
+                                made with HTML CSS and Bootstrap.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary buton1">Website</a>
+                                <a href="#" class="btn btn-primary buton2">Git Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="./images/working.gif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Working on it.</h3>
+                            <p class="card-text">Working on it. To be added soon. Till then check my all other projects
+                                and don't forget to give feedback.</p>
+                            <div class="project-buttons">
+                                <a href="#" class="btn btn-primary buton1">Go Link</a>
+                                <a href="#" class="btn btn-primary buton2">Git Repo</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+        <!-- Project Section End -->
+
+        <!-- Contact Section Start -->
+        <section id="contact">
+
+            <article class="container-fluid contact-me">
+                <div class="contact-info">
+                    <h2>If you like what you see, why not drop me an email?</h2>
+                    <p>Together let's bring our ideas to life 🤓</p>
+                    <a class="email-button" href="mailto:instrumentobdk@gmail.com"><b>Email me!</b></a>
+                </div>
+            </article>
+
+        </section>
+        <!-- Contact Section End -->
+
+    </div>
+
+    <footer class="foot" id="footer" href=#contact>
+        <div class="container-fluid">
+            <a href="https://twitter.com/me_SomyaSahu" target="_blank"><i class="footer-img fab fa-twitter"></i></a>
+            <a href="https://www.facebook.com/people/Somya-Sahu/100003012582968/" target="_blank"><i
+                    class="footer-img fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/somya_r_sahu/" target="_blank"><i
+                    class="footer-img fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/somya-ranjan-sahu-3420051b5/" target="_blank"><i
+                    class="footer-img fab fa-linkedin-in"></i></a>
+            <p class="copy">© Copyright 2022 Somya Sahu</p>
+        </div>
+    </footer>
+    <!-- Content End -->
+
+    <!-- JS Link Sheet -->
+    <script src="./function.js"></script>
+
+    <!-- Bootstrap JQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+        </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
