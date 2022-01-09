@@ -461,7 +461,7 @@ body{
   .copy{
     color: #dddddd;
     margin-bottom: 0;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   
   .footer-img{
@@ -721,7 +721,7 @@ body{
   
     .footer-img{
       color: var(--font-color);
-      margin: 5px 30px;
+      margin: 10px 30px;
       font-size: 20px;
     }
   
