@@ -24,13 +24,13 @@ body{
     --txt-color: #212529;
   }
   
-  [data-theme="pink"] {
-    --primary-color: #E91E63;
+  [data-theme="dark"] {
+    --primary-color: #25272e;
     --font-color: #ececec;
-    --font-color-main: #E91E63;
-    --hover-color: #22879b;
-    --head-footer-color: #ececec;
-    --bg-color: #2f323a;
+    --font-color-main: #22879b;
+    --hover-color: #E91E63;
+    --head-footer-color: #19B3D3;
+    --bg-color: #33363f;
     --bg-img: url(./images/blackpaper.png);
     --txt-color: #ececec;
   }
@@ -58,7 +58,7 @@ body{
   }
   
   .slider {
-    background-color: #E91E63;
+    background-color: #22879b;
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -331,7 +331,7 @@ body{
   }
   
   #about .bio-info{
-    width: 40rem;
+    width: 70%;
   }
 
   /* =============================================================================================================
@@ -345,7 +345,7 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.5;
-    padding: 100px 15px 100px;
+    padding: 100px 15px 250px;
     border-bottom: 5px solid #BFBFBF;
     border-radius: 0px 0px 31px 31px;
   }
@@ -609,10 +609,6 @@ body{
       height: 100vh;
     }
 
-    #home .jsd{
-      font-size: 17px;
-    }
-
     #check:checked ~ .content{
       margin-left: 0;
     }
@@ -782,13 +778,14 @@ body{
     }
   
     .footer-img{
-      color: var(--font-color);
+      color: #19B3D3;
       margin: 10px 20px;
       font-size: 20px;
     }
 
     .copy{
       font-size: 12px;
+      margin-bottom: 5px;
     }
   
   }
