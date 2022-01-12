@@ -264,8 +264,9 @@ body{
     font-size: 3.5rem;
     font-weight: 600;
     line-height: 1;
-    height: 100vh;
-    padding-top: 80px;
+    /* height: 100vh;
+    padding-top: 80px; */
+    padding: 80px 15px 713px;
     border-bottom: 5px solid #BFBFBF;
     border-radius: 0px 0px 31px 31px;
   }
@@ -302,8 +303,7 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.5;
-    height: 100vh;
-    padding-top: 230px;
+    padding: 230px 15px 230px ;
     border-bottom: 5px solid #BFBFBF;
     border-radius: 0px 0px 31px 31px;
   }
@@ -374,7 +374,7 @@ body{
   }
 
   .progress {
-      width: 50%;
+      width: 60%;
       height: 20px;
       margin-bottom: 20px;
       overflow: hidden;
@@ -473,8 +473,9 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.5;
-    height: 100vh;
-    padding-top: 330px;
+    /* height: 100vh;
+    padding-top: 330px; */
+    padding: 330px 15px 200px;
   }
   
   #contact .contact-info{
@@ -621,7 +622,7 @@ body{
   
   
     #about .bio-info{
-      width: 20rem;
+      width: 100%;
     }
   
     #about .about-me{
@@ -629,8 +630,7 @@ body{
       font-weight: 500;
       line-height: 1.5;
       margin-top: 0px;
-      padding-top: 180px;
-      height: 100vh;
+      padding: 180px 15px 180px;
     }
   
   /* =============================================================================================================
@@ -677,8 +677,7 @@ body{
       font-size: 1.5rem;
       font-weight: 500;
       line-height: 1.5;
-      height: 100vh;
-      padding-top: 250px;
+      padding: 250px 15px 245px;
     }
   
   /* =============================================================================================================
