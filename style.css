@@ -22,6 +22,7 @@ body{
     --bg-color: #ececec;
     --bg-img: url(./images/textured-paper.png);
     --txt-color: #212529;
+    --btn-color: #22879b;
   }
   
   [data-theme="dark"] {
@@ -33,6 +34,7 @@ body{
     --bg-color: #33363f;
     --bg-img: url(./images/blackpaper.png);
     --txt-color: #ececec;
+    --btn-color: #19B3D3;
   }
   
   
@@ -396,6 +398,8 @@ body{
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     border-radius: 20px;
     margin-top: 3rem;
+    background-color: var(--bg-color);
+    border-color: #BFBFBF;
   }
   
   .card:hover{
@@ -413,6 +417,7 @@ body{
     background-color: var(--bg-color);
     color: var(--txt-color);
     border-radius: 0 0 20px 20px;
+    padding-bottom: 0;
   }
   
   #projectos .projects{
@@ -421,34 +426,33 @@ body{
     border-bottom: 5px solid #BFBFBF;
     border-radius: 0px 0px 31px 31px;
   }
-  
+
   #projectos h2{
     color: var(--txt-color);
   }
   
   #projectos .btn{
-    background-color: var(--font-color-main);
-    border-color: var(--font-color-main);
+    color: var(--btn-color);
+    font-size: 2rem;
+    padding: 0;
+    margin:0 30px 0 0;
+  }
+
+  #projectos .btn2{
+    font-size: 2.5rem;
   }
   
   #projectos .btn:hover{
-    background-color: var(--hover-color);
-    border-color: var(--hover-color);
+    color: var(--hover-color);
     transition: 0.3s;
   }
   
-  #projectos .project-buttons{
-    display: flex;
-    justify-content: space-between;
-  }
-  
   .project-buttons a{
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
   
   .project-buttons a:hover{
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   
   
