@@ -347,9 +347,14 @@ body{
     font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.5;
-    padding: 100px 15px 250px;
+    padding: 100px 15px 100px;
     border-bottom: 5px solid #BFBFBF;
     border-radius: 0px 0px 31px 31px;
+  }
+
+  #skill .skill-image{
+    width: 25px;
+    height: 25px;
   }
 
   #skill h2{
@@ -357,8 +362,15 @@ body{
     color: var(--txt-color);
   }
 
-  #skill h4{
+  #skill h3{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     color: var(--txt-color);
+  }
+
+  #skill h5{
+    color: var(--txt-color);
+    margin-left: 30px;
   }
 
   .progress-bar {
@@ -378,6 +390,7 @@ body{
   .progress {
       width: 60%;
       height: 20px;
+      margin-left: 30px;
       margin-bottom: 20px;
       overflow: hidden;
       background-color: #BFBFBF;
@@ -618,6 +631,10 @@ body{
       transition: 0s;
       width: auto;
     }
+
+    .underline{
+      text-align: center;
+    }
   
       /* =============================================================================================================
   
@@ -663,10 +680,16 @@ body{
 
   .progress {
       width: 100%;
+      margin-left: 0;
   }
 
-  #skill h4{
+  #skill h3{
+    font-size: x-large;
+  }
+
+  #skill h5{
     font-size: large;
+    margin-left: 0;
   }
   
    /* =============================================================================================================
