@@ -7,8 +7,26 @@ body{
     background-image: var(--bg-img);
     transition: .5s;
     box-sizing: border-box;
+
+    /* -- Scrollbar starts -- */
+    scrollbar-width: thin;
+    scrollbar-color: var(--font-color-main) var(--card-footer-color);
+  }
+
+  body::-webkit-scrollbar {
+    width: 11px;
+  }
+  body::-webkit-scrollbar-track {
+    background: var(--card-footer-color);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--font-color-main);
+    border-radius: 6px;
+    border: 3px solid var(--card-footer-color);
   }
   
+  /* -- Scrollbar ends -- */
+
   html{
     scroll-behavior: smooth;
   }
