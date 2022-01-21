@@ -391,6 +391,15 @@ body{
     margin-left: 30px;
   }
 
+  #skill p{
+    margin:0 10px 0 0;
+    text-align:right;
+  }
+
+  #skill span{
+    font-size: 10px;
+  }
+
   .progress-bar {
     float: left;
     width: 0;
@@ -403,6 +412,7 @@ body{
     -webkit-transition: width .6s ease;
     -o-transition: width .6s ease;
     transition: width .6s ease;
+    animation: load 3s forwards normal;
   }
 
   .progress {
@@ -412,9 +422,19 @@ body{
       margin-bottom: 20px;
       overflow: hidden;
       background-color: #BFBFBF;
-      border-radius: 4px;
+      border-radius: 10px;
       -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
       box-shadow: inset 0 1px 2px rgba(0,0,0,.1);
+  }
+
+  @keyframes load {
+    from {
+      width: 0;
+    }
+    
+    to {
+      width: var(--progress);
+    }
   }
   
   /* =============================================================================================================
