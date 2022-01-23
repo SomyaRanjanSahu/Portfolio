@@ -8,7 +8,7 @@ body{
     transition: .5s;
     box-sizing: border-box;
 
-    /* -- Scrollbar starts -- */
+    /* -- Scrollbar css starts -- */
     scrollbar-width: thin;
     scrollbar-color: var(--font-color-main) var(--card-footer-color);
   }
@@ -25,12 +25,32 @@ body{
     border: 3px solid var(--card-footer-color);
   }
   
-  /* -- Scrollbar ends -- */
+  /* -- Scrollbar css ends -- */
 
   html{
     scroll-behavior: smooth;
   }
+
+  /* =============================================================================================================
   
+                                            Selection color css
+  
+  ================================================================================================================ */
+
+  ::-moz-selection { /* Code for Firefox */
+    background: var(--selection-color);
+  }
+  
+  ::selection {
+    background: var(--selection-color);
+  }
+  
+  /* =============================================================================================================
+  
+                                            Theme colors
+  
+  ================================================================================================================ */
+
   :root {
     --primary-color: #2f323a;
     --font-color: #19B3D3;
@@ -41,7 +61,8 @@ body{
     --bg-img: url(./images/textured-paper.png);
     --txt-color: #212529;
     --btn-color: #22879b;
-    --card-footer-color:#e5e5e5;
+    --card-footer-color: #e5e5e5;
+    --selection-color: #71C9CE;
   }
   
   [data-theme="dark"] {
@@ -54,7 +75,8 @@ body{
     --bg-img: url(./images/blackpaper.png);
     --txt-color: #ececec;
     --btn-color: #19B3D3;
-    --card-footer-color:#2f313a;
+    --card-footer-color: #2f313a;
+    --selection-color: #34495e;
   }
   
   
@@ -774,14 +796,18 @@ body{
       display: block;
       width: calc(100% - 0%);
     }
-  
+    
+    .mobile-nav label{
+      margin-bottom: 0;
+    }
+
     .nav-bar{
       background: var(--primary-color);
       width: calc(100% - 0px);
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 30px;
+      padding: 10px 30px 11px;
       z-index: 2;
       position: fixed;
       bottom: 0;
