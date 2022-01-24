@@ -322,13 +322,13 @@ body{
     font-weight: 500;
   }
   
-  #home span{
+  #home .home-name{
     color: var(--font-color-main);
     text-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px -1px rgba(0,0,0,0.24);
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
   }
   
-  #home span:hover{
+  #home .home-name:hover{
     color: var(--hover-color);
     transition: 0.3s;
     text-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
