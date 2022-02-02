@@ -1,4 +1,12 @@
 
+// ---------------------------------- PreLoader --------------------------------------
+
+var loader = document.getElementById("preloader");
+
+window.addEventListener("load", function(){
+  loader.style.display = "none";
+})
+
 // ---------------------------------- Theme ------------------------------------------
 
 const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
