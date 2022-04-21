@@ -13,10 +13,10 @@ const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"
 
 function switchTheme(e) {
     if (e.target.checked) {
-        document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-theme', 'light');
     }
     else {
-        document.documentElement.setAttribute('data-theme', 'light');
+        document.documentElement.setAttribute('data-theme', 'dark');
     }    
 }
 
@@ -47,7 +47,7 @@ var TxtRotate = function(el, toRotate, period) {
     this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
   
     var that = this;
-    var delta = 300 - Math.random() * 100;
+    var delta = 120 - Math.random() * 100;
   
     if (this.isDeleting) { delta /= 2; }
   
